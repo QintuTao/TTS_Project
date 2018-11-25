@@ -7,8 +7,10 @@ from TTS import speech
 
 def main():
     count = 0
-    sp = speech.Speech(title="speech one",text="Notice all student council members, the student council is having a meeting today at lunch at room 3O1, please wear your shirts.",speaker="Ting-Ting",order=1)
+    sp = speech.Speech(title="speech one",text="Notice all student council members, the student council is having a meeting today at lunch at room 3O1, please wear your shirts.",speaker="Samantha",order=1)
     sps = []
+    sp2 = speech.Speech(title="speech two",text="Qintu",order=1,speaker="Samantha ")
+    sps.append(sp2)
     sps.append(sp)
     engine = pyttsx3.init()
 
@@ -20,12 +22,8 @@ def main():
         print("proceeding", name, location, length)
 
     def finish_utterance_notification(name, completed,count = 0):
-        if count >= len(sps):
-            print(0)
-            engine.say("jasdfasdf","sd")
-            count += 1
-        else:
-            engine.endLoop()
+        if name=
+
 
     def on_error_notification(name, exception):
         return exception
