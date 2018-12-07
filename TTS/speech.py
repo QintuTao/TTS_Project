@@ -3,7 +3,8 @@
 
 class Speech:
     speakers = ["Alex","Ting-Ting","Samantha"]
-    def __init__(self,title:str,text:str,order:int,speaker:str):
+    def __init__(self,title:str,text:str,order:int,speaker:str,timer:float = 1.0):
+        self._timer = timer
         self._title = title
         self._text = text
         self._order = order
@@ -27,6 +28,9 @@ class Speech:
     def getSpeaker(self):
         return self.speaker
 
+    def getTimer(self):
+        return self._timer
+
     #setters
     def setTitle(self,t):
         self._title = t
@@ -39,6 +43,9 @@ class Speech:
 
 
 
+
+    def setTimer(self,t):
+        self._timer = t
 
     def changeSpeakerTo(self,speaker:str):
         if speaker not in self.speakers:
