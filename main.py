@@ -51,6 +51,8 @@ def main():
                 engine.setProperty(name="rate", value=engine.getProperty(name="rate") - 15)
                 engine.setProperty(name="rate", value=engine.getProperty(name="volume") + 0.25)
 
+
+
                 engine.say(text=sps[count].getText(),name=sps[count].getTitle())
                 engine.startLoop()
         # operate timer
