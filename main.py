@@ -10,8 +10,8 @@ def main():
     count = 0
     sp = speech.Speech(title="speech1",text="Notice all student council members, the student council is having a meeting today at lunch at room 3O1, please wear your shirts.",speaker="Samantha",order=1)
     sps = []
-    sp2 = speech.Speech(title="speech2",text="Qintu",order=1,speaker="Samantha ")
-    sp3 = speech.Speech(title="speech3",text="is very",order=1,speaker="Samantha ")
+    sp2 = speech.Speech(title="speech2",text="End",order=1,speaker="Samantha ")
+    sp3 = speech.Speech(title="speech3",text="  ",order=1,speaker="Samantha ")
     sp2.setTimer(4.00)
     sps.append(sp)
     sps.append(sp2)
