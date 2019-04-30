@@ -3,9 +3,6 @@ import pyttsx3
 import time
 from TTS import speech
 
-
-
-
 def main():
     count = 0
     sp = speech.Speech(title="speech1",text="Notice all student council members, the student council is having a meeting today at lunch at room 3O1, please wear your shirts.",speaker="Samantha",order=1)
@@ -60,11 +57,6 @@ def main():
         print(f"Timer operating. The next speech will be delivered in {sps[count].getTimer()} secs!")
         time.sleep(sps[count].getTimer())
         count += 1
-
-
-
-
-
 
 if __name__ == '__main__':
     main()
